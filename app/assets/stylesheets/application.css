@@ -1,0 +1,71 @@
+/*
+ *= require_tree .
+ *= require_self
+ */
+ html, body {
+   font-family: 'Josefin Sans', 'Verdana', sans-serif;
+   background-color: #E0E4CC;
+ }
+
+ .parent {
+  border: 5px solid #FA6900;
+}
+
+.item {
+  /*height: 50px;*/
+  margin: 5px;
+  background: #F38630;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  /*Remove Height for using align-items:stretch*/
+  font-weight: 600;
+}
+
+/********** Flex Stuff **********/
+
+.parent {
+  /*display: flex;*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  /*First - Direction*/
+  /*flex-direction: column;*/
+  /*row, row-reverse, column-reverse*/
+
+  /*Second - Wrap*/
+  /*flex-wrap: nowrap;
+  One fifth by default. In row, unless wrap
+  flex-wrap: wrap;
+  Wrap-reverse*/
+
+  /*Third - Justify*/
+  /*justify-content: center;
+  justify-content: space-around;
+  Space-around: first and last fixed, rest sapced well. USEFUL!*/
+
+  /*Fourth - Align Item: For vertical*/
+  /*height: 200px;
+  justify-content: space-around;
+  align-items: center;
+  flex-start/end, stretch(Lot's of fun)
+  Baseline aligns font on a baseline*/
+
+  /*Fifth - Align Content: Justify for vertical */
+  /*height: 200px;
+  flex-wrap: wrap;
+  align-content: center;
+  Space around, flrx-start/end
+  Diff
+  align-content: space-between;
+  flex-direction: column;*/
+
+  /*PROPERTIES THAT EFFECT THE ELEMENTS*/
+}
+
+.item {
+  /*width: 50px;*/
+  /*width: 300px;*/
+  width: 20%;
+}
